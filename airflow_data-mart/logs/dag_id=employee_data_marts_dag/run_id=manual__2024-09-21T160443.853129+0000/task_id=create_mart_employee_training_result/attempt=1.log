@@ -1,0 +1,18 @@
+[2024-09-21T16:05:24.215+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-21T16:05:24.245+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: employee_data_marts_dag.create_mart_employee_training_result manual__2024-09-21T16:04:43.853129+00:00 [queued]>
+[2024-09-21T16:05:24.260+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: employee_data_marts_dag.create_mart_employee_training_result manual__2024-09-21T16:04:43.853129+00:00 [queued]>
+[2024-09-21T16:05:24.261+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-09-21T16:05:24.289+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): create_mart_employee_training_result> on 2024-09-21 16:04:43.853129+00:00
+[2024-09-21T16:05:24.300+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'employee_data_marts_dag', 'create_mart_employee_training_result', 'manual__2024-09-21T16:04:43.853129+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/employee_data_marts_dag_update.py', '--cfg-path', '/tmp/tmpb2n1m6j2']
+[2024-09-21T16:05:24.302+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=4685) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-21T16:05:24.304+0000] {standard_task_runner.py:105} INFO - Job 53: Subtask create_mart_employee_training_result
+[2024-09-21T16:05:24.304+0000] {standard_task_runner.py:72} INFO - Started process 4688 to run task
+[2024-09-21T16:05:24.381+0000] {task_command.py:467} INFO - Running <TaskInstance: employee_data_marts_dag.create_mart_employee_training_result manual__2024-09-21T16:04:43.853129+00:00 [running]> on host 942f0f86d762
+[2024-09-21T16:05:24.527+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='employee_data_marts_dag' AIRFLOW_CTX_TASK_ID='create_mart_employee_training_result' AIRFLOW_CTX_EXECUTION_DATE='2024-09-21T16:04:43.853129+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-21T16:04:43.853129+00:00'
+[2024-09-21T16:05:24.529+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-21T16:05:43.677+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-21T16:05:43.693+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-21T16:05:43.695+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=employee_data_marts_dag, task_id=create_mart_employee_training_result, run_id=manual__2024-09-21T16:04:43.853129+00:00, execution_date=20240921T160443, start_date=20240921T160524, end_date=20240921T160543
+[2024-09-21T16:05:43.784+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-21T16:05:43.819+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-21T16:05:43.822+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
